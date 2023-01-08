@@ -62,7 +62,7 @@ function game(){
   console.log(chalk.blue("Yay, your final score is: ")+ score);
 }
 
-function highScores(){
+/*function highScores(){
   
   //console.log("Top 2 high Scores are :");
   for(var j=0;j<highScore.length;j++){
@@ -73,8 +73,8 @@ function highScores(){
     }
   }
   
-}
+}*/
 
 welcomeUser();
 game();
-highScores();
+//highScores();
