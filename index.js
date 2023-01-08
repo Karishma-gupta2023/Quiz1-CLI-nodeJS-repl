@@ -60,21 +60,30 @@ function game(){
       play(currentQuestion.question, currentQuestion.answer);
       }
   console.log(chalk.blue("Yay, your final score is: ")+ score);
+  console.log("--------------------------------------------------");
 }
 
-/*function highScores(){
-  
-  //console.log("Top 2 high Scores are :");
-  for(var j=0;j<highScore.length;j++){
-    var currentScore = highScore[j];
-    if(score>currentScore.score[j]){
-      console.log("Congrats, you have created a high score, please share a screengrab")
-      
+function highScores() {
+
+  console.log("Top 2 high Scores are :");
+  console.log("--------------------------------------------------");
+  for (var k = 0; k < highScore.length; k++) {
+    var currentScore1 = highScore[k];
+    console.log(currentScore1.name, currentScore1.scored);
+
+    console.log("--------------------------------------------------");
+  }
+  for (var j = 0; j < highScore.length; j++) {
+    var currentScore2 = highScore[j];
+    if (score < currentScore2.scored) {
+      break;
     }
   }
-  
-}*/
+  console.log(chalk.green("Congrats, you have created a high score, please share a screengrab ") + score);
+
+
+}
 
 welcomeUser();
 game();
-//highScores();
+highScores();
