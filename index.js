@@ -73,14 +73,7 @@ function highScores() {
 
     console.log("--------------------------------------------------");
   }
-  for (var j = 0; j < highScore.length; j++) {
-    var currentScore2 = highScore[j];
-    if (score < currentScore2.scored) {
-      break;
-    }
-  }
-  console.log(chalk.green("Congrats, you have created a high score, please share a screengrab ") + score);
-
+  
 
 }
 
